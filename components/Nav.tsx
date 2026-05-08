@@ -68,7 +68,7 @@ export default function Nav() {
       </nav>
 
       <div style={{
-        position: "fixed", top: 68, left: 0, right: 0, zIndex: 199,
+        position: "fixed", top: 0, left: 0, right: 0, zIndex: 199,
         background: "rgba(7,7,7,0.98)", backdropFilter: "blur(24px)",
         borderBottom: "1px solid var(--border)",
         padding: "24px var(--px) 32px",
