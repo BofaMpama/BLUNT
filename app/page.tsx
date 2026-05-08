@@ -23,7 +23,7 @@ export default function Home() {
       {/* HERO */}
       <section style={{ minHeight: "100svh", display: "flex", alignItems: "center", position: "relative", overflow: "hidden", padding: "96px var(--px) 64px" }}>
         <div style={{ position: "absolute", inset: 0, pointerEvents: "none", backgroundImage: "linear-gradient(to right, #1E1E1E 1px, transparent 1px), linear-gradient(to bottom, #1E1E1E 1px, transparent 1px)", backgroundSize: "64px 64px", maskImage: "radial-gradient(ellipse 90% 90% at 50% 50%, black 5%, transparent 100%)" }} />
-        <div style={{ position: "absolute", top: "38%", left: "30%", transform: "translate(-50%,-50%)", width: 800, height: 600, background: "radial-gradient(ellipse, rgba(187,255,0,0.22) 0%, transparent 68%)", pointerEvents: "none" }} />
+        <div style={{ position: "absolute", top: "38%", left: "30%", transform: "translate(-50%,-50%)", width: 800, height: 600, background: "radial-gradient(ellipse, var(--red-glow) 0%, transparent 68%)", pointerEvents: "none" }} />
 
         <div style={{ position: "absolute", top: 100, right: 40, fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "var(--muted)", letterSpacing: "0.12em", textTransform: "uppercase", lineHeight: 2.4, textAlign: "right" }} className="desktop-only">
           <div>EST. 2024</div>
