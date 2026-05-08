@@ -6,8 +6,11 @@ export default function Footer() {
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "68px var(--px) 28px" }}>
         <div style={{ marginBottom: 44 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16 }}>
-            <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 11, background: "var(--accent)", color: "var(--bg)", padding: "3px 8px", borderRadius: 3 }}>BT</span>
-            <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 18, color: "var(--text)", letterSpacing: "-0.025em" }}>BLUNT<span style={{ color: "var(--accent)" }}>.</span></span>
+ <img 
+              src="/image/logo2.PNG" // Update with the actual path to your image
+              alt="Blunt Logo"
+              style={{ height: 28, width: 'auto' }} // Adjust height as needed
+            />            <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 18, color: "var(--text)", letterSpacing: "-0.025em" }}>BLUNT<span style={{ color: "var(--red)" }}>.</span></span>
           </div>
           <p style={{ color: "var(--muted)", lineHeight: 1.85, fontSize: 13, maxWidth: 240, marginBottom: 16 }}>No Fluff. Just Tech. Training Africa's next generation of builders, one cohort at a time.</p>
           <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "var(--muted)" }}>A product of BLUNT Network LTD.</div>

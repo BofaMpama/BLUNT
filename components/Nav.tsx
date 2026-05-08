@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+// import logo from "./path/to/image_0.png"; // In a real project, import the image here
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -47,7 +48,13 @@ export default function Nav() {
       <nav style={navStyle}>
         <div style={{ maxWidth: 1200, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", height: 68 }}>
           <Link href="/" style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 11, background: "var(--accent)", color: "var(--bg)", padding: "3px 8px", borderRadius: 3 }}>BT</span>
+            {/* Logo image replaces initials */}
+            <img 
+              src="/image/logo1.PNG" // Update with the actual path to your image
+              alt="Blunt Logo"
+              style={{ height: 28, width: 'auto' }} // Adjust height as needed
+            />
+            {/* The word "BLUNT." is retained */}
             <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 19, color: "var(--text)", letterSpacing: "-0.025em" }}>BLUNT<span style={{ color: "var(--accent)" }}>.</span></span>
           </Link>
 
