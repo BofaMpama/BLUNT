@@ -2,19 +2,19 @@ import RevealWrapper from "@/components/RevealWrapper";
 import Link from "next/link";
 
 const steps = [
-  { n: "01", title: "Master a High-Income Skill", desc: "Pick a track — web dev, design, data, or cloud. Our programs teach you the exact skills clients pay premium rates for." },
-  { n: "02", title: "Build a Portfolio That Converts", desc: "We guide you to build 3–5 real projects specifically designed to attract your ideal clients — not just impress recruiters." },
-  { n: "03", title: "Position & Price Yourself", desc: "Learn how to identify your niche, write a compelling profile, and set rates that reflect your actual value — not your imposter syndrome." },
-  { n: "04", title: "Land Your First Clients", desc: "Cold outreach templates, proposal frameworks, and platform strategies that have helped 40+ of our graduates land paying work." },
-  { n: "05", title: "Deliver & Retain", desc: "Client communication, project management, and delivery practices that turn one-time jobs into long-term relationships." },
-  { n: "06", title: "Scale to a Business", desc: "Going beyond trading time for money — retainers, productized services, subcontracting, and building toward an agency model." },
+  { n: "01", title: "Master a High-Income Skill", desc: "Pick a track — web dev, design, data, cloud or AI evaluation. Our programs teach you the exact skills that are highly sort after, technical or non-technical " },
+  { n: "02", title: "Build a Portfolio That Converts", desc: "We guide you through the quickest way to attract your first job. Be it via building a couple of real life projects or partnering with the right individuals." },
+  { n: "03", title: "Position & Price Yourself", desc: "Learn how to identify your niche, where to find worthy jobs with good hourly pay, how to set your rates for direct clients." },
+  { n: "04", title: "Land Your First Job", desc: "Step by step approach to landing your first job in dollars. Strategies, tricks and hacks no one will readily tell you, but are secretly doing." },
+  { n: "05", title: "Deliver & Retain", desc: "Learn how to maintain quality, client communication, systems and deal structures that ensures consistency and continuity." },
+  { n: "06", title: "Scale to a Business", desc: "Replicate all you have learned with another platform, another client, another partner. Double your earning potential. Advance toward an agency model." },
 ];
 
 const platforms = [
-  { name: "Upwork", desc: "The world's largest freelance marketplace. We teach you the algorithm, proposal strategy, and how to get your first review — the hardest part.", level: "Recommended for beginners", badge: "◆ Primary" },
-  { name: "Toptal", desc: "Top 3% only. High-paying long-term contracts. We prep elite graduates for the rigorous Toptal screening process.", level: "Advanced freelancers", badge: "◆ Advanced" },
-  { name: "Direct Clients", desc: "The highest-margin freelancing model. We teach LinkedIn outreach, cold email, and referral systems to build a direct client base.", level: "All levels", badge: "◆ Highest Earning" },
-  { name: "Fiverr", desc: "Perfect for productized services. We help you create gigs that rank and convert, especially for design and content work.", level: "Beginners", badge: "◆ Quick Start" },
+  { name: "Outlier ", desc: "The go-to platform for AI training and data annotation work. We show you how to qualify for high-paying tasks and consistently hit the top earner tiers.", level: "Recommended for beginners", badge: "◆ Primary" },
+  { name: "Remotasks", desc: "Low barrier, fast onboarding. Perfect for building early income while you sharpen your skills — we show you which task categories pay best and how to level up fast.", badge: "◆ Advanced" },
+  { name: "Direct Clients", desc: "The highest-margin freelancing model. We teach LinkedIn outreach, cold email, and referral systems to build a direct client base that pays on your terms.", level: "All levels", badge: "◆ Highest Earning" },
+  { name: "Handshake", desc: "Where top companies recruit emerging tech talent. We help you build a profile that stands out and positions you for internships, contracts, and full-time remote roles.", level: "Beginners", badge: "◆ Quick Start" },
 ];
 
 const testimonials = [
@@ -38,7 +38,7 @@ export default function Freelancing() {
       {/* STATS */}
       <div style={{ background: "var(--card)", borderBottom: "1px solid var(--border)" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "32px var(--px)", display: "flex", gap: 48, flexWrap: "wrap" }}>
-          {[["40+", "Full-Time Freelancers"], ["$1,800", "Avg Monthly Earnings"], ["3 Weeks", "Avg Time to First Client"], ["85%", "Success Rate"]].map(([n, l]) => (
+          {[["40+", "Full-Time Freelancers"], [" $5,500 ", "Avg Monthly Earnings"], ["3 Weeks", "Avg Time to First Client"], ["85%", "Success Rate"]].map(([n, l]) => (
             <div key={l}>
               <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 28, color: "var(--accent)", letterSpacing: "-0.03em" }}>{n}</div>
               <div style={{ fontSize: 11, color: "var(--muted)", marginTop: 4 }}>{l}</div>
@@ -79,10 +79,8 @@ export default function Freelancing() {
               <RevealWrapper key={p.name} delay={String(i % 2 + 1)} style={{ background: "var(--card)", padding: "36px 32px" }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 20 }}>
                   <h3 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 26, color: "var(--text)", letterSpacing: "-0.025em" }}>{p.name}</h3>
-                  <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 9, color: "var(--accent)", textTransform: "uppercase", letterSpacing: "0.1em" }}>{p.badge}</span>
                 </div>
                 <p style={{ color: "var(--dim)", fontSize: 14, lineHeight: 1.8, marginBottom: 20 }}>{p.desc}</p>
-                <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "0.1em", paddingTop: 16, borderTop: "1px solid var(--border)" }}>Best for: {p.level}</div>
               </RevealWrapper>
             ))}
           </div>
@@ -102,15 +100,15 @@ export default function Freelancing() {
             <RevealWrapper delay="2">
               <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
                 {[
-                  "Live weekly sessions with working freelancers",
-                  "Proposal templates that have won real contracts",
-                  "Rate calculator and pricing strategy framework",
-                  "LinkedIn and Upwork profile review",
-                  "Cold outreach scripts and email sequences",
-                  "Client onboarding and contract templates",
-                  "BLUNT Alumni Network lifetime access",
-                  "Job board and opportunity alerts",
-                  "1-on-1 feedback sessions with instructors",
+                  "Pre recorded, downloadable telegram sessions",
+                  "Partnership templates that give results",
+                  "LinkedIn and CV review",
+                  "Bypassing localization barrier",
+                  "Project onboarding practice and templates",
+                  "Opportunity alerts",
+                  "Access to foreign clients /jobs",
+                  "1 -on- 1 feedback sessions",
+                  "BLUNT alumni network lifetime access",
                   "Certificate of completion",
                 ].map((item, i) => (
                   <div key={i} style={{ display: "flex", alignItems: "center", gap: 16, padding: "14px 16px", borderLeft: "2px solid var(--border)" }}>
@@ -124,7 +122,7 @@ export default function Freelancing() {
         </div>
       </div>
 
-      {/* TESTIMONIALS */}
+      {/* TESTIMONIALS *
       <div className="bg-card section-border-top">
         <div className="container">
           <RevealWrapper>
@@ -145,7 +143,7 @@ export default function Freelancing() {
             ))}
           </div>
         </div>
-      </div>
+      </div>*/}
 
       <div style={{ background: "var(--accent)", padding: "80px var(--px)" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 32 }}>

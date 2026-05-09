@@ -13,17 +13,17 @@ const products = [
     cta: "Launch App →",
     href: "#",
   },
-  {
-    tag: "AI Tool",
-    status: "beta",
-    statusLabel: "● Beta",
-    title: "CareerMap AI",
-    tagline: "Your personalized tech career roadmap — in minutes.",
-    desc: "Tell CareerMap AI where you are (skills, experience, time available, goals) and it generates a customized, step-by-step tech career roadmap. Built specifically for the African market with local job market data, salary benchmarks, and freelancing opportunities built in.",
-    features: ["Personalized skill gap analysis", "Role-specific learning paths", "African market salary benchmarks", "Freelancing vs job market guidance", "Weekly milestone planning", "Progress tracking"],
-    cta: "Join Waitlist →",
-    href: "/contact",
-  },
+{
+  tag: "Educational Game",
+  status: "live",
+  statusLabel: "● Live",
+  title: "CTTWTP",
+  tagline: "Experience history one puzzle piece at a time.",
+  desc: "Coming To Terms With The Past is an educational jigsaw puzzle game that brings the Transatlantic Slave Trade to life through beautifully designed puzzles, immersive narration, and interactive storytelling. Each completed piece reveals powerful visuals, facts, and human stories — making history unforgettable for students, educators, and curious minds alike.",
+  features: ["Historical jigsaw puzzles", "Immersive narration", "Interactive storytelling", "In-game facts & lessons", "Designed for classrooms & self-study", "Reflective learning experience"],
+  cta: "Download App →",
+  href: "https://play.google.com/store/apps/details?id=com.game.CTTWTP&hl=en",
+},
   {
     tag: "Community Platform",
     status: "coming",
@@ -38,12 +38,12 @@ const products = [
 ];
 
 const partners = [
-  { name: "Andela", type: "Talent Partner", desc: "BLUNT graduates receive preferential consideration in Andela's tech talent placement program." },
   { name: "AWS Activate", type: "Cloud Partner", desc: "Enrolled students receive AWS Activate credits and access to cloud resources for their projects." },
   { name: "Figma Education", type: "Design Partner", desc: "All design students get Figma Professional access at no cost through our education partnership." },
   { name: "Paystack", type: "Payments Partner", desc: "Integration partner for our LMS billing infrastructure. Also a frequent recruiter of BLUNT graduates." },
-  { name: "TechCabal", type: "Media Partner", desc: "BLUNT graduates and products are featured across TechCabal's platforms reaching 200K+ African tech readers." },
-  { name: "She Code Africa", type: "Community Partner", desc: "Co-creating scholarship slots for women in tech through SCA's network and BLUNT's training programs." },
+  { name: "Teenagers' Outreach Ministries", type: "Missions Partner", desc: "We partner with TOM to extend tech education to underserved youth communities, equipping the next generation with skills that open doors." },
+  { name: "Coming To Terms With The Past (CTTWTP)", type: "Strategic Social Partner", desc: "A shared commitment to education that goes beyond the screen. CTTWTP brings historical awareness and cultural reflection into spaces where BLUNT brings technical skills." },
+  { name: "Olah Clothing Brand", type: "Fashion Partner", desc: "Official lifestyle and merch partner for BLUNT events, cohort kits, and branded activations." },
 ];
 
 export default function Products() {
@@ -54,7 +54,9 @@ export default function Products() {
         <div className="page-hero-inner">
           <div className="label"><span className="label-dot" />Products & Partners</div>
           <h1>We don't just<br />teach. We <span className="accent">build.</span></h1>
-          <p>Three digital products in production. Partnerships with Africa's leading tech companies. This is what happens when a training company also thinks like a product studio.</p>
+          <p>We train<span className="accent">.</span> We build<span className="accent">.</span> We ship<span className="accent">.</span>
+<br/>
+BLUNT Technology combines education, product development, and real-world execution — creating talent and tools that move Africa forward.</p>
         </div>
       </div>
 
@@ -151,7 +153,7 @@ export default function Products() {
                   <div key={name as string} style={{ padding: "20px 20px", borderLeft: "2px solid var(--border)", background: "var(--card)" }}>
                     <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 8 }}>
                       <h4 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 15, color: "var(--text)" }}>{name}</h4>
-                      <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 9, color: "var(--dim)", flexShrink: 0, marginLeft: 12 }}>{eta}</span>
+                     {/* <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 9, color: "var(--dim)", flexShrink: 0, marginLeft: 12 }}>{eta}</span>*/}
                     </div>
                     <p style={{ fontSize: 12, color: "var(--dim)", lineHeight: 1.7 }}>{desc}</p>
                   </div>

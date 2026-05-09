@@ -2,26 +2,26 @@ import RevealWrapper from "@/components/RevealWrapper";
 import Link from "next/link";
 
 const team = [
-  { name: "Chukwuemeka Nwosu", role: "Founder & CEO", bio: "Software engineer turned educator. 8+ years building products across fintech and edtech. Founded BLUNT to democratize tech education in Africa.", initials: "CN" },
-  { name: "Adaora Eze", role: "Head of Curriculum", bio: "Former Google engineer with a passion for pedagogy. Designed learning paths that have helped 500+ students transition into tech careers.", initials: "AE" },
-  { name: "Tunde Okonkwo", role: "Head of Freelancing Hub", bio: "Top-rated Upwork freelancer and business coach. Has helped over 40 BLUNT graduates land their first paying clients.", initials: "TO" },
-  { name: "Ngozi Obi", role: "Head of Products", bio: "Product designer and builder. Leads BLUNT's in-house digital product studio — from concept to shipped software.", initials: "NO" },
+  { name: "Emmanuel Ikpeme", role: "Founder & CEO", bio: "The vision behind BLUNT — from a room with one table and ten chairs to a growing tech ecosystem. Emmanuel leads with a conviction that Africa's talent just needs the right structure to thrive.", initials: "EI" },
+  { name: "MGrace Ikpeme", role: "Board of Directors & Business Development", bio: "Shapes BLUNT's strategic direction and drives business growth across sectors. MGrace ensures that every partnership and opportunity aligns with BLUNT's long-term mission.", initials: "MI" },
+  { name: "Miracle Olaedo", role: "Head of Partnerships", bio: "The bridge between BLUNT and the organizations, brands, and institutions that amplify its impact. Miracle builds relationships that create real opportunities for BLUNT graduates.", initials: "MO" },
+  { name: "Chinecherem Williams", role: "Head of Freelancing Hub", bio: "Guides BLUNT graduates from skilled to self-employed. Chinecherem leads the systems, coaching, and support that have helped 40+ students land their first paying clients.", initials: "CW" },
 ];
 
 const values = [
-  { icon: "◈", title: "Radical Clarity", desc: "We cut through the noise. Every lesson, every resource, every piece of advice is direct, practical, and immediately applicable." },
-  { icon: "◎", title: "Outcome Obsession", desc: "We don't measure success by enrollment numbers. We measure it by how many people land jobs, clients, and build real products." },
-  { icon: "⬡", title: "African by Design", desc: "Our curriculum, case studies, and community are built for the African context — not adapted from Silicon Valley playbooks." },
-  { icon: "◇", title: "Community First", desc: "Learning is social. BLUNT is a network of builders who lift each other up, share opportunities, and hold each other accountable." },
+  { icon: "◈", title: "Radical Clarity", desc: "We eliminate confusion. Every lesson, tool, and system is built for immediate, real-world application — no theory for theory's sake." },
+  { icon: "◎", title: "Outcome Obsession", desc: "We measure success by results: income earned, problems solved, and products shipped. Enrollment numbers mean nothing without outcomes." },
+  { icon: "⬡", title: "African by Design", desc: "Our approach is grounded in the African context, yet built to meet global standards — not adapted from Silicon Valley playbooks." },
+  { icon: "◇", title: "Community First", desc: "Growth is faster together. We build a network that supports, challenges, and elevates every member — because no one builds alone." },
 ];
 
 const milestones = [
-  { year: "2024", event: "BLUNT Technology founded in Calabar, Nigeria by Chukwuemeka Nwosu" },
-  { year: "Q1 2024", event: "First cohort of 40 students enrolled across Frontend and Design tracks" },
-  { year: "Q2 2024", event: "Launched the Freelancing Hub — first 12 graduates placed with paying clients" },
-  { year: "Q3 2024", event: "Crossed 200 students trained. Expanded to Data Analytics and Cloud tracks" },
-  { year: "Q4 2024", event: "Shipped BLUNT LMS v1 — our proprietary learning management system" },
-  { year: "2025", event: "500+ students trained. CareerMap AI in beta. BLUNT Network in development" },
+  { year: "2021", event: "BLUNT Technology founded as the first operational subsidiary of BLUNT Network — beginning in a small room with one large table and ten chairs." },
+  { year: "Early 2022", event: "First cohorts trained, websites and mobile applications delivered, a ticketing platform launched for three events, and over NGN 700,000 generated. Team scaled from 3 to 11 members." },
+  { year: "2022", event: "BLUNT Network officially registered as parent company. Key partnerships formed with Weebo, Trend X, Kwubu Digimarketing, and others. Revenue crossed NGN 1.5 million." },
+  { year: "2023", event: "After dissolved partnerships and team attrition, BLUNT relocated, rebuilt, and delivered platforms for Theodore Effiong Ministries and Kings Bride — reintegrating former students into the workforce." },
+  { year: "2024–2025", event: "Trained multiple cohorts, secured government-related contracts, delivered for AFRO Conference Lagos, Precious Esse Foundation, and Teenagers' Outreach Ministries. Revenue exceeded NGN 2 million. BLUNT supported 30+ businesses and developed CTTWTP's full digital presence." },
+  { year: "2026", event: "International expansion begins — particularly into the United Kingdom. Close to NGN 4 million generated in Q1 alone, with high-end branding projects and active strategic partnerships." },
 ];
 
 export default function About() {
@@ -31,8 +31,8 @@ export default function About() {
         <div className="page-hero-grid" />
         <div className="page-hero-inner">
           <div className="label"><span className="label-dot" />About Us</div>
-          <h1>Built by<br /><span className="accent">Africans.</span></h1>
-          <p>We didn't stumble into education. We built BLUNT because we lived the frustration of trying to break into tech with no clear path, no mentors, and no community that understood our context.</p>
+          <h1>We saw the gaps.<br /><span className="accent">We built the bridge.</span></h1>
+          <p>BLUNT Technology exists to redefine how Africans learn, build, and win in tech — with real skills, real products, and real opportunities. This is not theory. This is execution.</p>
         </div>
       </div>
 
@@ -43,10 +43,10 @@ export default function About() {
             <RevealWrapper>
               <div className="label"><span className="label-dot" />Our Story</div>
               <h2 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: "clamp(32px, 5vw, 52px)", letterSpacing: "-0.035em", lineHeight: 1.0, color: "var(--text)", marginBottom: 32 }}>
-                From frustration<br />to <span className="accent">movement.</span>
+                From one room<br />to a growing <span className="accent">ecosystem.</span>
               </h2>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, paddingTop: 28, borderTop: "1px solid var(--border)" }}>
-                {[["Mission", "Make world-class tech education accessible to every African who wants it."], ["Vision", "A continent where talent gaps are filled entirely from within."]].map(([label, text]) => (
+                {[["Mission", "To empower Africans with tech skills, tools, and opportunities to thrive globally."], ["Vision", "To become Africa's leading hub for tech education, innovation, and digital product development."]].map(([label, text]) => (
                   <div key={label}>
                     <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--accent)", marginBottom: 10 }}>{label}</div>
                     <p style={{ color: "var(--dim)", fontSize: 13, lineHeight: 1.75 }}>{text}</p>
@@ -55,10 +55,10 @@ export default function About() {
               </div>
             </RevealWrapper>
             <RevealWrapper delay="2">
-              <p style={{ color: "var(--dim)", lineHeight: 1.9, fontSize: 15, fontWeight: 300, marginBottom: 22 }}>BLUNT Technology was born from a simple frustration: Africa's talent is undeniable, but the pathways to tech careers are cluttered with noise, gatekeeping, and irrelevant content designed for Western markets.</p>
-              <p style={{ color: "var(--dim)", lineHeight: 1.9, fontSize: 15, fontWeight: 300, marginBottom: 22 }}>Our founder spent years navigating these broken pathways — watching brilliant people give up not because they lacked ability, but because they lacked access. Access to quality mentors, structured learning, and a community that understood their reality.</p>
-              <p style={{ color: "var(--dim)", lineHeight: 1.9, fontSize: 15, fontWeight: 300, marginBottom: 22 }}>BLUNT is our answer. A training institution, freelancing launchpad, and product studio rolled into one. We cut straight to what actually works — practical skills, real mentorship, and a network that opens doors.</p>
-              <p style={{ color: "var(--dim)", lineHeight: 1.9, fontSize: 15, fontWeight: 300 }}>Today, we've trained over 500 students, placed 40+ freelancers with paying clients, and shipped 3 digital products. We're just getting started.</p>
+              <p style={{ color: "var(--dim)", lineHeight: 1.9, fontSize: 15, fontWeight: 300, marginBottom: 22 }}>BLUNT Technology was founded as a response to a critical gap in accessible, relevant, and career-focused technology education in Nigeria. The vision originated from BLUNT Network — Becoming Leaders United, Nourished, and Transformed — a long-standing initiative focused on leadership development and transformation across multiple sectors.</p>
+              <p style={{ color: "var(--dim)", lineHeight: 1.9, fontSize: 15, fontWeight: 300, marginBottom: 22 }}>The company began in a modest setting — a single large table, ten chairs, and a clearly defined mission: to restructure how technology skills are taught and applied in emerging markets.</p>
+              <p style={{ color: "var(--dim)", lineHeight: 1.9, fontSize: 15, fontWeight: 300, marginBottom: 22 }}>BLUNT introduced a more efficient model for career-focused tech education: in-demand stacks, shortened learning cycles, affordable pricing, and practical, job-ready skill acquisition — built for the African context, designed to meet global standards.</p>
+              <p style={{ color: "var(--dim)", lineHeight: 1.9, fontSize: 15, fontWeight: 300 }}>Today, BLUNT operates at the intersection of tech education, product development, and business transformation — a training institution, freelancing launchpad, and product studio in one ecosystem.</p>
             </RevealWrapper>
           </div>
         </div>
@@ -88,7 +88,7 @@ export default function About() {
         <div className="container">
           <RevealWrapper>
             <div className="label"><span className="label-dot" />Our Journey</div>
-            <h2 className="section-heading" style={{ marginBottom: 56 }}>From zero to<br /><span className="accent">500+ builders.</span></h2>
+            <h2 className="section-heading" style={{ marginBottom: 56 }}>Execution<br /><span className="accent">through every season.</span></h2>
           </RevealWrapper>
           <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
             {milestones.map((m, i) => (
@@ -109,7 +109,7 @@ export default function About() {
         <div className="container">
           <RevealWrapper>
             <div className="label"><span className="label-dot" />The Team</div>
-            <h2 className="section-heading" style={{ marginBottom: 56 }}>The people<br />behind <span className="accent">BLUNT.</span></h2>
+            <h2 className="section-heading" style={{ marginBottom: 56 }}>Leadership<br />and <span className="accent">execution.</span></h2>
           </RevealWrapper>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 1, background: "var(--border)" }} className="team-grid">
             {team.map((member, i) => (

@@ -31,33 +31,32 @@ export default function Home() {
           <div style={{ color: "var(--accent)" }}>◆ ACTIVE</div>
         </div>
 
-        <div style={{ maxWidth: 1200, margin: "0 auto", width: "100%", position: "relative" }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: 10, fontFamily: "'JetBrains Mono', monospace", fontSize: 10, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--accent)", marginBottom: 28, border: "1px solid var(--accent-glow)", padding: "6px 14px", borderRadius: 100, background: "var(--accent-fade)", animation: "heroFadeIn 0.8s cubic-bezier(0.16,1,0.3,1) both" }}>
-            <span style={{ width: 5, height: 5, borderRadius: "50%", background: "var(--accent)", flexShrink: 0, animation: "pulseDot 2s ease-in-out infinite" }} />
+        <div style={{ maxWidth: 1200, top: 40, margin: "0 auto", width: "100%", position: "relative" }}>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: 10, fontFamily: "'JetBrains Mono', monospace", fontSize: 10, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--red)", marginBottom: 28, border: "1px solid var(--red-glow)", padding: "6px 14px", borderRadius: 100, background: "var(--red-fade)", animation: "heroFadeIn 0.8s cubic-bezier(0.16,1,0.3,1) both" }}>
+            <span style={{ width: 5, height: 5, borderRadius: "50%", background: "var(--red)", flexShrink: 0, animation: "pulseDot 2s ease-in-out infinite" }} />
             Now Enrolling · 2025 Cohort
           </div>
 
           <h1 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: "clamp(52px, 16vw, 130px)", lineHeight: 0.92, letterSpacing: "-0.04em", color: "var(--text)", marginBottom: 28, animation: "heroFadeIn 0.8s 0.1s cubic-bezier(0.16,1,0.3,1) both" }}>
-            No Fluff.<br />
-            <span style={{ color: "var(--accent)" }}>Just Tech.</span>
+           Built for <br />
+            <span style={{ color: "var(--accent)" }}>Africa's next<span key={animKey} style={{ color: "var(--accent)", display: "inline-block", animation: "wordFadeIn 0.5s cubic-bezier(0.16,1,0.3,1) both" }}>{words[wordIdx]}</span>
+</span>
           </h1>
 
-          <div style={{ display: "flex", alignItems: "baseline", flexWrap: "wrap", gap: "4px 12px", fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: "clamp(20px, 3.5vw, 40px)", letterSpacing: "-0.02em", color: "var(--dim)", marginBottom: 36, animation: "heroFadeIn 0.8s 0.18s cubic-bezier(0.16,1,0.3,1) both" }}>
+        {/*  <div style={{ display: "flex", alignItems: "baseline", flexWrap: "wrap", gap: "4px 12px", fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: "clamp(20px, 3.5vw, 40px)", letterSpacing: "-0.02em", color: "var(--dim)", marginBottom: 36, animation: "heroFadeIn 0.8s 0.18s cubic-bezier(0.16,1,0.3,1) both" }}>
             Built for Africa's Next&nbsp;
             <span key={animKey} style={{ color: "var(--text)", display: "inline-block", animation: "wordFadeIn 0.5s cubic-bezier(0.16,1,0.3,1) both" }}>{words[wordIdx]}</span>
-          </div>
+          </div>*/}
 
           <p style={{ fontSize: 17, lineHeight: 1.8, color: "var(--dim)", maxWidth: 520, marginBottom: 48, fontWeight: 300, animation: "heroFadeIn 0.8s 0.26s cubic-bezier(0.16,1,0.3,1) both" }}>
-            BLUNT Technology trains, equips, and launches Africa's next wave of tech professionals. From total beginner to deployed product — we cut straight to what actually works.
-          </p>
+At BLUNT Technology, we don’t just teach tech — we build people, systems, and scalable digital solutions that shape the future of Africa.          </p>
 
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", animation: "heroFadeIn 0.8s 0.34s cubic-bezier(0.16,1,0.3,1) both" }}>
             <Link href="/programs" className="btn btn-primary">Explore Programs →</Link>
-            <Link href="/about" className="btn btn-ghost">Watch our story</Link>
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", marginTop: 72, paddingTop: 44, borderTop: "1px solid var(--border)", animation: "heroFadeIn 0.8s 0.44s cubic-bezier(0.16,1,0.3,1) both" }} className="stats-grid">
-            {[["500+", "Students Trained"], ["12+", "Active Programs"], ["40+", "Freelancers Placed"], ["3", "Digital Products"]].map(([n, l]) => (
+            {[["50+", "Students Trained"], ["10+", "Active Programs"], ["10+", "Freelancers Placed"], ["3", "Digital Products"]].map(([n, l]) => (
               <div key={l} style={{ paddingRight: 48, marginRight: 48, borderRight: "1px solid var(--border)" }} className="stat-item">
                 <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 4vw, 48px)", color: "var(--text)", letterSpacing: "-0.035em" }}>{n}</div>
                 <div style={{ fontSize: 11, color: "var(--muted)", marginTop: 5 }}>{l}</div>
@@ -77,12 +76,12 @@ export default function Home() {
               <div className="label"><span className="label-dot" />Our Story</div>
               <h2 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: "clamp(32px, 6vw, 64px)", letterSpacing: "-0.035em", lineHeight: 1.0, color: "var(--text)" }}>
                 Built by Africans.<br />
-                <span style={{ color: "var(--accent)" }}>For Africa's builders.</span>
+                <span style={{ color: "var(--accent)" }}>For Africa's founders.</span>
               </h2>
             </RevealWrapper>
             <RevealWrapper delay="2">
-              <p style={{ color: "var(--dim)", lineHeight: 1.9, fontSize: 15, fontWeight: 300, marginBottom: 22 }}>BLUNT Technology was born from a simple frustration: Africa's talent is undeniable, but the pathways to tech careers are cluttered with noise, gatekeeping, and irrelevant content.</p>
-              <p style={{ color: "var(--dim)", lineHeight: 1.9, fontSize: 15, fontWeight: 300, marginBottom: 28 }}>We built BLUNT to change that — to give young Africans a direct route from where they are to where they want to be. No detours. No fluff. Just structured learning, real mentorship, and actual outcomes.</p>
+              <p style={{ color: "var(--dim)", lineHeight: 1.9, fontSize: 15, fontWeight: 300, marginBottom: 22 }}>BLUNT Technology was founded as a response to a critical gap in accessible, relevant, and career-focused technology education in Nigeria and Africa at large.</p>
+              <p style={{ color: "var(--dim)", lineHeight: 1.9, fontSize: 15, fontWeight: 300, marginBottom: 28 }}>The vision originated from BLUNT Network—an acronym for Becoming Leaders United, Nourished, and Transformed—a long-standing initiative focused on leadership development and transformation across multiple sectors. After years of conceptual development, BLUNT Technology emerged in the second half of 2021 as its first operational subsidiary.</p>
               <Link href="/about" className="btn btn-ghost">Read our full story →</Link>
             </RevealWrapper>
           </div>
@@ -157,7 +156,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* TESTIMONIALS */}
+    {/*  
       <div className="bg-card section-border-top section-border-bot">
         <div className="container">
           <RevealWrapper>
@@ -181,7 +180,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* CTA BANNER */}
       <div style={{ background: "var(--accent)", padding: "100px var(--px)" }}>
