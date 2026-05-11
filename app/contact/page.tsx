@@ -39,11 +39,9 @@ export default function Contact() {
             <RevealWrapper>
               <div className="label"><span className="label-dot" />Contact Details</div>
               {[
-                ["Email", "hello@blunttechnology.com"],
-                ["WhatsApp", "+234 801 234 5678"],
-                ["Instagram", "@blunttechnology"],
-                ["X / Twitter", "@blunttechnology"],
-                ["LinkedIn", "BLUNT Technology"],
+                ["Email", "hello@bluntechnology.com"],
+                ["WhatsApp", "+234 913 792 2436"],
+                ["Facebook", "BLUNT Technology"],
                 ["Location", "Calabar, Cross River State, Nigeria"],
               ].map(([key, val]) => (
                 <div key={key} style={{ padding: "20px 0", borderBottom: "1px solid var(--border)" }}>
