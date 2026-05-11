@@ -58,7 +58,7 @@ At BLUNT Technology, we don’t just teach tech — we build people, systems, an
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", marginTop: 72, paddingTop: 44, borderTop: "1px solid var(--border)", animation: "heroFadeIn 0.8s 0.44s cubic-bezier(0.16,1,0.3,1) both" }} className="stats-grid">
             {[["50+", "Students Trained"], ["10+", "Active Programs"], ["10+", "Freelancers Placed"], ["3", "Digital Products"]].map(([n, l]) => (
               <div key={l} style={{ paddingRight: 48, marginRight: 48, borderRight: "1px solid var(--border)" }} className="stat-item">
-                <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 4vw, 48px)", color: "var(--text)", letterSpacing: "-0.035em" }}>{n}</div>
+                <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: "clamp(28px, 4vw, 48px)", color: "var(--text)", letterSpacing: "-0.035em", marginTop: 15 }}>{n}</div>
                 <div style={{ fontSize: 11, color: "var(--muted)", marginTop: 5 }}>{l}</div>
               </div>
             ))}
