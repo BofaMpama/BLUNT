@@ -4,13 +4,13 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://blunt-technology.vercel.app/'),
+  metadataBase: new URL('https://blunt-technology.netlify.app/'),
   title: "BLUNT Technology — No Fluff. Just Tech.",
   description: "BLUNT Technology trains, equips, and launches Africa's next wave of tech professionals. From beginner to deployed product.",
   openGraph: {
     title: "BLUNT Technology — No Fluff. Just Tech.",
     description: "BLUNT Technology trains, equips, and launches Africa's next wave of tech professionals. From beginner to deployed product.",
-    url: 'https://blunt-technology.vercel.app/',
+    url: 'https://blunt-technology.netlify.app/',
     siteName: 'BLUNT Technology',
     images: [
       {

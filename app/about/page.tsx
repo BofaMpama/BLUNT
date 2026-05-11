@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const team = [
   { name: "Emmanuel Ikpeme", role: "Founder & CEO", bio: "The vision behind BLUNT — from a room with one table and ten chairs to a growing tech ecosystem. Emmanuel leads with a conviction that Africa's talent just needs the right structure to thrive.", initials: "EI" },
-  { name: "MGrace Ikpeme", role: "Board of Directors & Business Development", bio: "Shapes BLUNT's strategic direction and drives business growth across sectors. MGrace ensures that every partnership and opportunity aligns with BLUNT's long-term mission.", initials: "MI" },
+  { name: "Grace Ikpeme", role: "Board of Directors & Business Development", bio: "Shapes BLUNT's strategic direction and drives business growth across sectors. MGrace ensures that every partnership and opportunity aligns with BLUNT's long-term mission.", initials: "MI" },
   { name: "Miracle Olaedo", role: "Head of Partnerships", bio: "The bridge between BLUNT and the organizations, brands, and institutions that amplify its impact. Miracle builds relationships that create real opportunities for BLUNT graduates.", initials: "MO" },
   { name: "Chinecherem Williams", role: "Head of Freelancing Hub", bio: "Guides BLUNT graduates from skilled to self-employed. Chinecherem leads the systems, coaching, and support that have helped 40+ students land their first paying clients.", initials: "CW" },
 ];
