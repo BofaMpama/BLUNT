@@ -60,6 +60,18 @@ BLUNT Technology combines education, product development, and real-world executi
         </div>
       </div>
 
+         {/* STATS BAR */}
+      <div style={{ background: "var(--card)", borderBottom: "1px solid var(--border)" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto", padding: "32px var(--px)", display: "flex", gap: 48, flexWrap: "wrap" }}>
+          {[["20+", "Products delivered"], ["40+", "Businesses branded"], ["₦20M+", "in revenue"]].map(([n, l]) => (
+            <div key={l}>
+              <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 28, color: "var(--accent)", letterSpacing: "-0.03em" }}>{n}</div>
+              <div style={{ fontSize: 11, color: "var(--muted)", marginTop: 4 }}>{l}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* PRODUCTS */}
       <div>
         <div className="container">

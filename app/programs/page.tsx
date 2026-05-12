@@ -34,7 +34,7 @@ export default function Programs() {
       {/* STATS BAR */}
       <div style={{ background: "var(--card)", borderBottom: "1px solid var(--border)" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "32px var(--px)", display: "flex", gap: 48, flexWrap: "wrap" }}>
-          {[["9", "Programs"], ["500+", "Graduates"], ["₦60K–₦160K", "Program Range"], ["4–12 Weeks", "Duration Range"]].map(([n, l]) => (
+          {[["10", "Programs"], ["50+", "Graduates"], ["₦60K–₦500K", "Program Range"], ["4–12 Weeks", "Duration Range"]].map(([n, l]) => (
             <div key={l}>
               <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 28, color: "var(--accent)", letterSpacing: "-0.03em" }}>{n}</div>
               <div style={{ fontSize: 11, color: "var(--muted)", marginTop: 4 }}>{l}</div>
