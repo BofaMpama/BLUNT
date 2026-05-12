@@ -18,9 +18,9 @@ export default function Footer() {
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 40, marginBottom: 44 }}>
           {[
-            { title: "Programs", links: [["Frontend Bootcamp", "/programs"], ["Data Analytics", "/programs"], ["UI/UX Design", "/programs"], ["Freelance Masterclass", "/programs"]] },
+            { title: "Programs", links: [["Frontend With ReactJS", "/programs"], ["Data Analytics", "/programs"], ["UI/UX Design", "/programs"], ["Freelance Masterclass", "/programs"]] },
             { title: "Company", links: [["About", "/about"], ["Careers", "/programs"], ["Contact", "/contact"]] },
-            { title: "Products", links: [["BLUNT LMS", "/products"], ["CareerMap AI", "/products"], ["BLUNT Network", "/products"]] },
+            { title: "Products", links: [["BLUNT LMS", "/products"], ["CTTWTP", "/products"], ["BLUNT Network", "/products"]] },
           ].map(col => (
             <div key={col.title}>
               <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 9, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--muted)", marginBottom: 16 }}>{col.title}</div>

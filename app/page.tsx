@@ -133,16 +133,15 @@ At BLUNT Technology, we don’t just teach tech — we build people, systems, an
           </RevealWrapper>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 1, background: "var(--border)" }} className="programs-grid">
             {[
-              { tag: "Web Dev", title: "Frontend Engineering Bootcamp", level: "Beginner → Intermediate", duration: "12 Weeks", spots: "14 spots left", open: false },
-              { tag: "Data & AI", title: "Data Analytics & Python", level: "Beginner", duration: "8 Weeks", spots: "8 spots left", open: false },
-              { tag: "Design", title: "UI/UX Product Design", level: "All Levels", duration: "10 Weeks", spots: "Open Enrollment", open: true },
+              { tag: "Web Dev", title: "Frontend With ReactJS", duration: "12 Weeks", open: false },
+              { tag: "Data & AI", title: "Data Analytics & Python", duration: "8 Weeks", open: false },
+              { tag: "Design", title: "UI/UX Product Design", duration: "10 Weeks", open: true },
             ].map((c, i) => (
               <RevealWrapper key={c.title} delay={String(i)} style={{ background: "var(--card)" }}>
                 <Link href="/programs" style={{ display: "flex", flexDirection: "column", padding: "26px 22px", height: "100%", transition: "background 0.25s" }} className="course-link">
                   <span style={{ display: "inline-block", fontFamily: "'JetBrains Mono', monospace", fontSize: 9, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--accent)", background: "var(--accent-fade)", padding: "3px 9px", borderRadius: 2, marginBottom: 14 }}>{c.tag}</span>
                   <h3 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 16, letterSpacing: "-0.02em", color: "var(--text)", lineHeight: 1.35, marginBottom: 18, flex: 1 }}>{c.title}</h3>
                   <div style={{ display: "flex", gap: 22, marginBottom: 20 }}>
-                    <div><div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--muted)", marginBottom: 4 }}>Level</div><div style={{ fontSize: 11, color: "var(--dim)" }}>{c.level}</div></div>
                     <div><div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--muted)", marginBottom: 4 }}>Duration</div><div style={{ fontSize: 11, color: "var(--dim)" }}>{c.duration}</div></div>
                   </div>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
