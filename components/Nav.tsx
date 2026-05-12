@@ -36,6 +36,8 @@ export default function Nav() {
   };
 
   const links = [
+    { href: "/", label: "" },
+    { href: "/#", label: "" },
     { href: "/programs", label: "Programs" },
     { href: "/freelancing", label: "Freelancing" },
     { href: "/products", label: "Products" },
