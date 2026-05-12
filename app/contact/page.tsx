@@ -2,14 +2,6 @@
 import RevealWrapper from "@/components/RevealWrapper";
 
 export default function Contact() {
-  const inputStyle: React.CSSProperties = {
-    width: "100%", padding: "13px 16px",
-    background: "var(--card)", border: "1px solid var(--border)",
-    borderRadius: 3, color: "var(--text)",
-    fontFamily: "'DM Sans', sans-serif", fontSize: 14, outline: "none",
-    boxSizing: "border-box" as const,
-  };
-
   return (
     <>
       <div className="page-hero">
@@ -24,7 +16,7 @@ export default function Contact() {
       {/* CONTACT GRID */}
       <div>
         <div className="container">
-          <div style={{ display: "grid", gap: "0 80px", alignItems: "flex-start" }} className="contact-grid">
+          <div className="contact-grid">
 
             {/* INFO */}
             <RevealWrapper>
@@ -37,13 +29,13 @@ export default function Contact() {
               ].map(([key, val]) => (
                 <div key={key} style={{ padding: "20px 0", borderBottom: "1px solid var(--border)" }}>
                   <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 9, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--muted)", marginBottom: 8 }}>{key}</div>
-                  <div style={{ fontSize: 14, color: "var(--dim)" }}>{val}</div>
+                  <div style={{ fontSize: 14, color: "var(--dim)", wordBreak: "break-word" }}>{val}</div>
                 </div>
               ))}
 
-              <div style={{ marginTop: 36, padding: "20px 20px", background: "var(--accent-fade)", border: "1px solid var(--accent-glow)", borderRadius: 3 }}>
-                <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-                  <span style={{ color: "var(--accent)", fontSize: 18 }}>◆</span>
+              <div style={{ marginTop: 36, padding: "20px", background: "var(--accent-fade)", border: "1px solid var(--accent-glow)", borderRadius: 3 }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: 12 }}>
+                  <span style={{ color: "var(--accent)", fontSize: 18, flexShrink: 0, marginTop: 2 }}>◆</span>
                   <div>
                     <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 13, color: "var(--accent)", marginBottom: 4 }}>Quick Response Guarantee</div>
                     <div style={{ fontSize: 12, color: "var(--dim)" }}>We respond to all messages within 24 hours. WhatsApp is fastest for urgent enquiries.</div>
@@ -55,28 +47,22 @@ export default function Contact() {
             {/* EMAIL CTA */}
             <RevealWrapper delay="2">
               <div className="label"><span className="label-dot" />Send a Message</div>
-              <div style={{
-                background: "var(--card)",
-                border: "1px solid var(--border)",
-                borderRadius: 4,
-                padding: "48px 40px",
-                display: "flex",
-                flexDirection: "column",
-                gap: 28,
-              }}>
+              <div className="email-cta-card">
+
                 {/* Icon */}
                 <div style={{
-                  width: 56, height: 56,
+                  width: 52, height: 52,
                   background: "var(--accent-fade)",
                   border: "1px solid var(--accent-glow)",
                   borderRadius: 3,
                   display: "flex", alignItems: "center", justifyContent: "center",
-                  fontSize: 24, color: "var(--accent)",
+                  fontSize: 22, color: "var(--accent)",
+                  flexShrink: 0,
                 }}>✉</div>
 
                 {/* Heading */}
                 <div>
-                  <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 26, color: "var(--text)", lineHeight: 1.25, marginBottom: 12 }}>
+                  <div className="email-cta-heading">
                     Drop us an email.<br />
                     <span style={{ color: "var(--accent)" }}>Be blunt.</span>
                   </div>
@@ -90,39 +76,24 @@ export default function Contact() {
                   background: "var(--bg)",
                   border: "1px solid var(--border)",
                   borderRadius: 3,
-                  padding: "14px 18px",
+                  padding: "14px 16px",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "space-between",
-                  gap: 12,
+                  gap: 10,
+                  overflow: "hidden",
                 }}>
-                  <div>
+                  <div style={{ minWidth: 0 }}>
                     <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 9, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--muted)", marginBottom: 6 }}>Our Email</div>
-                    <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 13, color: "var(--text)" }}>bluntechnologies@gmail.com</div>
+                    <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: "var(--text)", wordBreak: "break-all" }}>bluntechnologies@gmail.com</div>
                   </div>
-                  <span style={{ color: "var(--accent)", fontSize: 20, lineHeight: 1 }}>◆</span>
+                  <span style={{ color: "var(--accent)", fontSize: 18, lineHeight: 1, flexShrink: 0 }}>◆</span>
                 </div>
 
                 {/* CTA button */}
                 <a
                   href="mailto:bluntechnologies@gmail.com?subject=Inquiry from BLUNT Website"
-                  style={{
-                    background: "var(--accent)",
-                    color: "var(--bg)",
-                    border: "none",
-                    padding: "16px 24px",
-                    borderRadius: 3,
-                    fontFamily: "'Syne', sans-serif",
-                    fontWeight: 800,
-                    fontSize: 15,
-                    cursor: "pointer",
-                    width: "100%",
-                    textAlign: "center",
-                    textDecoration: "none",
-                    display: "block",
-                    boxSizing: "border-box",
-                    transition: "opacity 0.15s ease",
-                  }}
+                  className="email-cta-btn"
                   onMouseEnter={e => (e.currentTarget.style.opacity = "0.88")}
                   onMouseLeave={e => (e.currentTarget.style.opacity = "1")}
                 >
@@ -150,7 +121,7 @@ export default function Contact() {
             <div className="label"><span className="label-dot" />How We Can Help</div>
             <h2 className="section-heading" style={{ marginBottom: 48 }}>What are you<br /><span className="accent">looking for?</span></h2>
           </RevealWrapper>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 1, background: "var(--border)" }} className="help-grid">
+          <div style={{ display: "grid", gap: 1, background: "var(--border)" }} className="help-grid">
             {[
               { icon: "◈", title: "Training Enrollment", desc: "Looking to enroll in one of our training programs? Our team will help you choose the right track and get you set up for your cohort.", cta: "Explore Programs →", href: "/programs" },
               { icon: "◎", title: "Freelancing Support", desc: "Want to start freelancing but don't know where to begin? We'll walk you through the exact steps our 40+ graduates took.", cta: "Visit Freelancing Hub →", href: "/freelancing" },
@@ -159,9 +130,9 @@ export default function Contact() {
               { icon: "▲", title: "Product Inquiries", desc: "Questions about BLUNT LMS, CareerMap AI, or upcoming products? We'd love to give you a walkthrough.", cta: "View Products →", href: "/products" },
               { icon: "◉", title: "Careers at BLUNT", desc: "Want to join the team? We're always looking for great instructors, engineers, and community builders.", cta: "See Open Roles →", href: "#" },
             ].map((item, i) => (
-              <RevealWrapper key={item.title} delay={String(i % 3 + 1)} style={{ background: "var(--card)", padding: "32px 28px" }}>
+              <RevealWrapper key={item.title} delay={String(i % 3 + 1)} style={{ background: "var(--card)", padding: "32px 24px" }}>
                 <div style={{ fontSize: 22, color: "var(--muted)", marginBottom: 20 }}>{item.icon}</div>
-                <h3 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 18, color: "var(--text)", marginBottom: 12 }}>{item.title}</h3>
+                <h3 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 17, color: "var(--text)", marginBottom: 12 }}>{item.title}</h3>
                 <p style={{ color: "var(--dim)", fontSize: 13, lineHeight: 1.8, marginBottom: 20 }}>{item.desc}</p>
                 <a href={item.href} style={{ fontSize: 13, color: "var(--muted)", display: "flex", alignItems: "center", gap: 6 }}>{item.cta}</a>
               </RevealWrapper>
@@ -171,8 +142,75 @@ export default function Contact() {
       </div>
 
       <style>{`
-        .contact-grid { grid-template-columns: 1fr !important; }
-        @media (min-width: 1024px) { .contact-grid { grid-template-columns: 1fr 1.4fr !important; } }
+        /* CONTACT GRID */
+        .contact-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 48px 0;
+          align-items: flex-start;
+        }
+        @media (min-width: 1024px) {
+          .contact-grid {
+            grid-template-columns: 1fr 1.4fr;
+            gap: 0 80px;
+          }
+        }
+
+        /* EMAIL CTA CARD */
+        .email-cta-card {
+          background: var(--card);
+          border: 1px solid var(--border);
+          border-radius: 4px;
+          padding: 28px 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          box-sizing: border-box;
+          width: 100%;
+        }
+        @media (min-width: 640px) {
+          .email-cta-card { padding: 40px 32px; }
+        }
+        @media (min-width: 1024px) {
+          .email-cta-card { padding: 48px 40px; }
+        }
+
+        /* EMAIL CTA HEADING */
+        .email-cta-heading {
+          font-family: 'Syne', sans-serif;
+          font-weight: 800;
+          font-size: 22px;
+          color: var(--text);
+          line-height: 1.25;
+          margin-bottom: 12px;
+        }
+        @media (min-width: 640px) {
+          .email-cta-heading { font-size: 26px; }
+        }
+
+        /* EMAIL CTA BUTTON */
+        .email-cta-btn {
+          background: var(--accent);
+          color: var(--bg);
+          border: none;
+          padding: 15px 16px;
+          border-radius: 3px;
+          font-family: 'Syne', sans-serif;
+          font-weight: 800;
+          font-size: 14px;
+          cursor: pointer;
+          width: 100%;
+          text-align: center;
+          text-decoration: none;
+          display: block;
+          box-sizing: border-box;
+          transition: opacity 0.15s ease;
+        }
+        @media (min-width: 640px) {
+          .email-cta-btn { font-size: 15px; padding: 16px 24px; }
+        }
+
+        /* HELP GRID */
         .help-grid { grid-template-columns: 1fr !important; }
         @media (min-width: 640px) { .help-grid { grid-template-columns: 1fr 1fr !important; } }
         @media (min-width: 1024px) { .help-grid { grid-template-columns: repeat(3, 1fr) !important; } }
