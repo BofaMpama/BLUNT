@@ -52,7 +52,6 @@ export default function Programs() {
                 <div style={{ padding: "28px 24px", height: "100%", display: "flex", flexDirection: "column" }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 14 }}>
                     <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 9, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--accent)", background: "var(--accent-fade)", padding: "3px 9px", borderRadius: 2 }}>{c.tag}</span>
-                    <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: c.open ? "var(--accent)" : c.spots === "Coming Soon" ? "var(--dim)" : "#FF8C42" }}>● {c.spots}</span>
                   </div>
                   <h3 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 18, letterSpacing: "-0.02em", color: "var(--text)", lineHeight: 1.3, marginBottom: 14 }}>{c.title}</h3>
                   <p style={{ color: "var(--dim)", fontSize: 13, lineHeight: 1.8, flex: 1, marginBottom: 20 }}>{c.desc}</p>
@@ -73,7 +72,7 @@ export default function Programs() {
                     <div><div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--muted)", marginBottom: 4 }}>Fee</div><div style={{ fontSize: 12, color: "var(--text)", fontWeight: 500 }}>{c.price}</div></div>
                   </div>
 
-                  <Link href="/contact" style={{ display: "block", background: "var(--accent)", color: "var(--bg)", padding: "12px 20px", borderRadius: 3, fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 13, textAlign: "center" }}>{c.spots === "Coming Soon" ? "Join Waitlist →" : "Enroll Now →"}</Link>
+                  <Link href="/contact" style={{ display: "block", background: "var(--accent)", color: "var(--bg)", padding: "12px 20px", borderRadius: 3, fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 13, textAlign: "center" }}>Enroll Now →</Link>
                 </div>
               </RevealWrapper>
             ))}
