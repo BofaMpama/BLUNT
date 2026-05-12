@@ -145,7 +145,6 @@ At BLUNT Technology, we don’t just teach tech — we build people, systems, an
                     <div><div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 9, textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--muted)", marginBottom: 4 }}>Duration</div><div style={{ fontSize: 11, color: "var(--dim)" }}>{c.duration}</div></div>
                   </div>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                    <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 10, color: c.open ? "var(--accent)" : "#FF8C42" }}>● {c.spots}</span>
                     <span style={{ fontSize: 15, color: "var(--muted)" }}>→</span>
                   </div>
                 </Link>
