@@ -1,16 +1,7 @@
 "use client";
-import { useState } from "react";
 import RevealWrapper from "@/components/RevealWrapper";
 
 export default function Contact() {
-  const [submitted, setSubmitted] = useState(false);
-  const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
-
-  const handleSubmit = () => {
-    if (!form.name || !form.email || !form.message) return;
-    setSubmitted(true);
-  };
-
   const inputStyle: React.CSSProperties = {
     width: "100%", padding: "13px 16px",
     background: "var(--card)", border: "1px solid var(--border)",
@@ -33,13 +24,13 @@ export default function Contact() {
       {/* CONTACT GRID */}
       <div>
         <div className="container">
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1.4fr", gap: "0 80px", alignItems: "flex-start" }} className="contact-grid">
+          <div style={{ display: "grid", gap: "0 80px", alignItems: "flex-start" }} className="contact-grid">
 
             {/* INFO */}
             <RevealWrapper>
               <div className="label"><span className="label-dot" />Contact Details</div>
               {[
-                ["Email", "hello@bluntechnology.com"],
+                ["Email", "bluntechnologies@gmail.com"],
                 ["WhatsApp", "+234 913 792 2436"],
                 ["Facebook", "BLUNT Technology"],
                 ["Location", "Calabar, Cross River State, Nigeria"],
@@ -61,34 +52,91 @@ export default function Contact() {
               </div>
             </RevealWrapper>
 
-            {/* FORM */}
+            {/* EMAIL CTA */}
             <RevealWrapper delay="2">
-              {!submitted ? (
+              <div className="label"><span className="label-dot" />Send a Message</div>
+              <div style={{
+                background: "var(--card)",
+                border: "1px solid var(--border)",
+                borderRadius: 4,
+                padding: "48px 40px",
+                display: "flex",
+                flexDirection: "column",
+                gap: 28,
+              }}>
+                {/* Icon */}
+                <div style={{
+                  width: 56, height: 56,
+                  background: "var(--accent-fade)",
+                  border: "1px solid var(--accent-glow)",
+                  borderRadius: 3,
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  fontSize: 24, color: "var(--accent)",
+                }}>✉</div>
+
+                {/* Heading */}
                 <div>
-                  <div className="label"><span className="label-dot" />Send a Message</div>
-                  <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-                    <input style={inputStyle} type="text" placeholder="Your name" value={form.name} onChange={e => setForm(f => ({ ...f, name: e.target.value }))} />
-                    <input style={inputStyle} type="email" placeholder="Your email" value={form.email} onChange={e => setForm(f => ({ ...f, email: e.target.value }))} />
-                    <select style={{ ...inputStyle, appearance: "none" as const }} value={form.subject} onChange={e => setForm(f => ({ ...f, subject: e.target.value }))}>
-                      <option value="">What's this about?</option>
-                      <option>Program Enrollment</option>
-                      <option>Freelancing Hub</option>
-                      <option>Partnership Inquiry</option>
-                      <option>Product / SaaS Question</option>
-                      <option>Business Solutions</option>
-                      <option>General Question</option>
-                    </select>
-                    <textarea style={{ ...inputStyle, resize: "vertical" }} rows={6} placeholder="What do you need? Be blunt." value={form.message} onChange={e => setForm(f => ({ ...f, message: e.target.value }))} />
-                    <button onClick={handleSubmit} style={{ background: "var(--accent)", color: "var(--bg)", border: "none", padding: 16, borderRadius: 3, fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 15, cursor: "pointer", width: "100%" }}>Send Message →</button>
+                  <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 26, color: "var(--text)", lineHeight: 1.25, marginBottom: 12 }}>
+                    Drop us an email.<br />
+                    <span style={{ color: "var(--accent)" }}>Be blunt.</span>
                   </div>
+                  <p style={{ fontSize: 14, color: "var(--dim)", lineHeight: 1.85, margin: 0 }}>
+                    Tell us what you need — training, partnerships, products, or anything else. Write directly to our inbox and we'll get back to you within 24 hours.
+                  </p>
                 </div>
-              ) : (
-                <div style={{ padding: "64px 48px", background: "var(--card)", border: "1px solid var(--accent)", borderRadius: 4, textAlign: "center" }}>
-                  <div style={{ fontSize: 56, color: "var(--accent)", fontFamily: "'Syne', sans-serif", marginBottom: 20 }}>✓</div>
-                  <div style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: 24, color: "var(--text)", marginBottom: 12 }}>Message sent.</div>
-                  <div style={{ fontSize: 14, color: "var(--dim)" }}>We'll get back to you within 24 hours.</div>
+
+                {/* Address display */}
+                <div style={{
+                  background: "var(--bg)",
+                  border: "1px solid var(--border)",
+                  borderRadius: 3,
+                  padding: "14px 18px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  gap: 12,
+                }}>
+                  <div>
+                    <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 9, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--muted)", marginBottom: 6 }}>Our Email</div>
+                    <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 13, color: "var(--text)" }}>bluntechnologies@gmail.com</div>
+                  </div>
+                  <span style={{ color: "var(--accent)", fontSize: 20, lineHeight: 1 }}>◆</span>
                 </div>
-              )}
+
+                {/* CTA button */}
+                <a
+                  href="mailto:bluntechnologies@gmail.com?subject=Inquiry from BLUNT Website"
+                  style={{
+                    background: "var(--accent)",
+                    color: "var(--bg)",
+                    border: "none",
+                    padding: "16px 24px",
+                    borderRadius: 3,
+                    fontFamily: "'Syne', sans-serif",
+                    fontWeight: 800,
+                    fontSize: 15,
+                    cursor: "pointer",
+                    width: "100%",
+                    textAlign: "center",
+                    textDecoration: "none",
+                    display: "block",
+                    boxSizing: "border-box",
+                    transition: "opacity 0.15s ease",
+                  }}
+                  onMouseEnter={e => (e.currentTarget.style.opacity = "0.88")}
+                  onMouseLeave={e => (e.currentTarget.style.opacity = "1")}
+                >
+                  Open Email App →
+                </a>
+
+                {/* Subtext */}
+                <p style={{ fontSize: 12, color: "var(--muted)", margin: 0, textAlign: "center", lineHeight: 1.7 }}>
+                  Prefer WhatsApp?{" "}
+                  <a href="https://wa.me/2349137922436" target="_blank" rel="noopener noreferrer" style={{ color: "var(--accent)", textDecoration: "none" }}>
+                    Chat with us directly →
+                  </a>
+                </p>
+              </div>
             </RevealWrapper>
 
           </div>
@@ -128,8 +176,6 @@ export default function Contact() {
         .help-grid { grid-template-columns: 1fr !important; }
         @media (min-width: 640px) { .help-grid { grid-template-columns: 1fr 1fr !important; } }
         @media (min-width: 1024px) { .help-grid { grid-template-columns: repeat(3, 1fr) !important; } }
-        input::placeholder, textarea::placeholder { color: #3A3A3A; }
-        input:focus, textarea:focus, select:focus { border-color: var(--accent) !important; box-shadow: 0 0 0 3px rgba(187,255,0,0.07) !important; }
       `}</style>
     </>
   );
