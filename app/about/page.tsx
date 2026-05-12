@@ -16,7 +16,7 @@ const values = [
 ];
 
 const milestones = [
-  { year: "2021", event: "BLUNT Technology founded as the first operational subsidiary of BLUNT Network — beginning in a small room with one large table and ten chairs." },
+  { year: "2021", event: "BLUNT Technology founded as the first operational operational wing of BLUNT Network — beginning in a small room with one large table and ten chairs." },
   { year: "Early 2022", event: "First cohorts trained, websites and mobile applications delivered, a ticketing platform launched for three events, and over NGN 700,000 generated. Team scaled from 3 to 11 members." },
   { year: "2022", event: "BLUNT Network officially registered as parent company. Key partnerships formed with Weebo, Trend X, Kwubu Digimarketing, and others. Revenue crossed NGN 1.5 million." },
   { year: "2023", event: "After dissolved partnerships and team attrition, BLUNT relocated, rebuilt, and delivered platforms for Theodore Effiong Ministries and Kings Bride — reintegrating former students into the workforce." },

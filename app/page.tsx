@@ -34,7 +34,7 @@ export default function Home() {
         <div style={{ maxWidth: 1200, top: 40, margin: "0 auto", width: "100%", position: "relative" }}>
           <div style={{ display: "inline-flex", alignItems: "center", gap: 10, fontFamily: "'JetBrains Mono', monospace", fontSize: 10, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--red)", marginBottom: 28, border: "1px solid var(--red-glow)", padding: "6px 14px", borderRadius: 100, background: "var(--red-fade)", animation: "heroFadeIn 0.8s cubic-bezier(0.16,1,0.3,1) both" }}>
             <span style={{ width: 5, height: 5, borderRadius: "50%", background: "var(--red)", flexShrink: 0, animation: "pulseDot 2s ease-in-out infinite" }} />
-            Now Enrolling · 2025 Cohort
+            Now Enrolling · 2026 Cohort
           </div>
 
           <h1 style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800, fontSize: "clamp(52px, 16vw, 130px)", lineHeight: 0.92, letterSpacing: "-0.04em", color: "var(--text)", marginBottom: 28, animation: "heroFadeIn 0.8s 0.1s cubic-bezier(0.16,1,0.3,1) both" }}>
@@ -81,7 +81,7 @@ At BLUNT Technology, we don’t just teach tech — we build people, systems, an
             </RevealWrapper>
             <RevealWrapper delay="2">
               <p style={{ color: "var(--dim)", lineHeight: 1.9, fontSize: 15, fontWeight: 300, marginBottom: 22 }}>BLUNT Technology was founded as a response to a critical gap in accessible, relevant, and career-focused technology education in Nigeria and Africa at large.</p>
-              <p style={{ color: "var(--dim)", lineHeight: 1.9, fontSize: 15, fontWeight: 300, marginBottom: 28 }}>The vision originated from BLUNT Network—an acronym for Becoming Leaders United, Nourished, and Transformed—a long-standing initiative focused on leadership development and transformation across multiple sectors. After years of conceptual development, BLUNT Technology emerged in the second half of 2021 as its first operational subsidiary.</p>
+              <p style={{ color: "var(--dim)", lineHeight: 1.9, fontSize: 15, fontWeight: 300, marginBottom: 28 }}>The vision originated from BLUNT Network—an acronym for Becoming Leaders United, Nourished, and Transformed—a long-standing initiative focused on leadership development and transformation across multiple sectors. After years of conceptual development, BLUNT Technology emerged in the second half of 2021 as its first operational operational wing.</p>
               <Link href="/about" className="btn btn-ghost">Read our full story →</Link>
             </RevealWrapper>
           </div>
